@@ -1,3 +1,5 @@
+/* geral-stylesheet */
+
 * {
     font-family: Verdana, Tahoma, sans-serif;
 }
@@ -6,6 +8,8 @@
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
+
+/* login-page-stylesheet */
 
 .flex-container {
     display: flex;
@@ -66,11 +70,116 @@ h2::after {
 }
 
 #btn-style:hover {
-    filter: drop-shadow(.1rem .25rem .2rem #302f2f);
+    filter: drop-shadow(.1rem .25rem .2rem #6638f0);
     background-color: #cec4ee;
     color: #4000ff;
     font-size: 1.1rem;
     width: 8.5rem;
     border: .2rem solid #6638f0;
-    transition: 1s;
+    transition: .5s;
+}
+
+/* crud-stylesheet */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem;
+}
+
+.search-input {
+    border: 1px solid whitesmoke;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+}
+
+.search-input input, 
+.search-input button {
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.3rem;
+}
+
+.search-input button {
+    cursor: pointer;
+    background: none;
+    color: #fafafa;
+}
+
+.search-input button:hover {
+    background-color: #fafafa;
+    color: #6638f0;
+}
+
+#table-style {
+    margin: 2rem 4rem;
+    width: 75rem;
+    filter: drop-shadow(.5rem .4rem .8rem #424040);
+}
+
+.create-btn {
+    float: right;
+    cursor: pointer;
+    margin-left: 5rem;
+    padding: .7rem;
+    background-color: #fafafa;
+    border: 2px solid #fafafa;
+    border-radius: 50%;
+}
+
+.create-btn:hover {
+    filter: drop-shadow(.2rem .3rem .4rem #353535);
+    background-color: rgb(240, 238, 238);
+    border: 1px solid rgb(240, 238, 238);
+    transition: .5s;
+}
+
+.edit-btn,
+.del-btn {
+    border-radius: .3rem;
+    color: white;
+    border: none;
+    z-index: 1;
+}
+
+.del-btn {
+    background-color: rgba(148,187,233);
+}
+
+.edit-btn {
+    background-color: rgba(238,174,202);
+}
+
+.edit-btn:hover {
+    filter: drop-shadow(.2rem .3rem .4rem rgb(207, 134, 166));
+    background-color: rgb(255, 139, 189);
+}
+
+.del-btn:hover {
+    filter: drop-shadow(.2rem .3rem .4rem rgb(123, 167, 216));
+    background-color: rgb(103, 174, 255);
+}
+
+/* create-page-stylesheet */
+
+.create-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39rem;
+}
+
+#card-create {
+    width: 27rem;
+    height: 37.5rem;
+    padding: 5rem;
+    border-radius: 2rem;
+    background-color: #E6E6FA;
+    filter: drop-shadow(.25rem .20rem .85rem #424040);
+}
+
+#disp-style:hover {
+    color: #612ef8;
 }
