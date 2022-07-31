@@ -82,3 +82,58 @@ header {
     filter: drop-shadow(.2rem .3rem .4rem rgb(123, 167, 216));
     background-color: rgb(103, 174, 255);
 }
+
+/* Crud-Pedidos-Stylesheet */
+
+input::placeholder {
+    color: #d3d3d3;
+}
+
+.center-column{
+    width: 75rem;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+}
+
+.item-row{
+    background-color: #a376da;
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: 20px;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+}
+
+.item-row:hover {
+    filter: drop-shadow(.2rem .3rem .4rem #b791e6);
+    background-color: #805aaf;
+}
+
+.btn-display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#btn-space-between {
+    margin-left: 1rem;
+}
+
+#submit{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: #fff;
+    background-color: #5663ad;
+    border: 1px solid #5663ad;
+}
+
+#submit:hover {
+    filter: drop-shadow(.2rem .3rem .4rem #6f7dce);
+    background-color: #4353af;
+}
