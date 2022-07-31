@@ -1,0 +1,21 @@
+// Form-Functions-JS
+
+//desabilitando envios de formulários se houver campos vazios
+(() => {
+  'use strict'
+
+  // Buscando todos os formulários aos quais aplicamos estilos de validação Bootstrap personalizados
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // loop que impede o envio
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()

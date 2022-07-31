@@ -1,0 +1,91 @@
+/* login-page-stylesheet */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37rem;
+}
+
+h2 {
+    color:#424040;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 9rem;
+    height: .3rem;
+    margin: .5rem auto 0;
+    border-bottom: 4px solid;
+    border-image-source: linear-gradient(to bottom right ,#f78ae0, #6638f0 );
+    border-image-slice: 4;
+}
+
+#card {
+    width: 27rem;
+    height: 29rem;
+    padding: 5rem;
+    border-radius: 2rem;
+    background-color: #E6E6FA;
+    filter: drop-shadow(.25rem .20rem .85rem #424040);
+}
+
+#input-style {
+    width: 17rem;
+    background-color: #E6E6FA;
+    border: .18rem solid #5e5e5e;
+}
+
+#input-style:hover {
+    border: .2rem solid #6638f0;
+    color: #612ef8;
+}
+
+.col-12 {
+    padding: .9rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#btn-style {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #6638f0;
+    color: #fafafa;
+    border: #6638f0;
+}
+
+#btn-style:hover {
+    filter: drop-shadow(.1rem .25rem .2rem #6638f0);
+    background-color: #cec4ee;
+    color: #4000ff;
+    font-size: 1.1rem;
+    width: 8.5rem;
+    border: .2rem solid #6638f0;
+    transition: .5s;
+}
+
+/* create/edit-form-stylesheet */
+
+.create-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39rem;
+}
+
+#card-create {
+    width: 27rem;
+    height: 37.5rem;
+    padding: 5rem;
+    border-radius: 2rem;
+    background-color: #E6E6FA;
+    filter: drop-shadow(.25rem .20rem .85rem #424040);
+}
+
+#disp-style:hover {
+    color: #612ef8;
+}
