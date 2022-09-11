@@ -7,10 +7,16 @@ header {
     padding: 3.5rem;
 }
 
+input{
+    width: 20rem;
+}
+
 .search-input {
-    border: 1px solid whitesmoke;
+    position:absolute;
+    left: 21rem;
+    border: 1.5px solid #fafafade;
     border-radius: 0.3rem;
-    padding: 0.3rem;
+    padding: .3rem;
 }
 
 .search-input input, 
@@ -18,69 +24,96 @@ header {
     font-size: 1.2rem;
     border-radius: 0.2rem;
     border: none;
-    padding: 0.3rem;
+    padding: .3rem;
 }
 
 .search-input button {
     cursor: pointer;
     background: none;
-    color: #fafafa;
+    color: #fafafade;
+    transition: .5s;
 }
 
 .search-input button:hover {
-    background-color: #fafafa;
-    color: #6638f0;
+    background-color: #ffffff;
+    color: #805aaf;
 }
 
 #table-style {
-    margin: 2rem 4rem;
-    width: 75rem;
+    margin: 2rem 9rem;
+    width: 65rem;
     filter: drop-shadow(.5rem .4rem .8rem #424040);
 }
 
 .create-btn {
+    position: absolute;
+    right: 24rem;
     float: right;
     cursor: pointer;
     margin-left: 5rem;
     padding: .7rem;
-    background-color: #fafafa;
-    border: 2px solid #fafafa;
+    background-color: #fafafade;
+    border: 2px solid #fafafade;
     border-radius: 50%;
+    transition: .5s;
 }
 
 .create-btn:hover {
     filter: drop-shadow(.2rem .3rem .4rem #353535);
-    background-color: rgb(240, 238, 238);
-    border: 1px solid rgb(240, 238, 238);
-    transition: .5s;
+    background-color: #fafafade;
+    border: 4px solid #fafafade;
+}
+
+.btn-create {
+    position: absolute;
+    right: 21.5rem;
+    font-weight: bolder;
+    margin-left: 5rem;
+    width: 13rem;
+    height: 2.8rem;
+    border: 2px solid #8400ff;
+    border-radius: .75rem;
+    background-color: #8400ff;
+    color: #fafafade;
+    transition: .75s;
+}
+
+.btn-create:hover {
+    filter: drop-shadow(.2rem .3rem .4rem #8400ff);
+    width: 15rem;
+    background-color: #8400ff;
+    border: 4px solid #8400ff;
 }
 
 .edit-btn,
 .del-btn {
-    width: 3.8rem;
+    font-weight: bold;
+    width: 4rem;
     height: 2rem;
     border-radius: .3rem;
-    color: white;
+    color: #fafafade;
     border: none;
     z-index: 1;
 }
 
 .del-btn {
-    background-color: rgba(148,187,233);
+    background-color: #c501e2;
+    transition: .75s
 }
 
 .edit-btn {
-    background-color: rgba(238,174,202);
+    background-color: #52fd00;
+    transition: .75s
 }
 
 .edit-btn:hover {
-    filter: drop-shadow(.2rem .3rem .4rem rgb(207, 134, 166));
-    background-color: rgb(255, 139, 189);
+    filter: drop-shadow(.2rem .3rem .4rem #52fd00);
+    background-color: #52fd00;
 }
 
 .del-btn:hover {
-    filter: drop-shadow(.2rem .3rem .4rem rgb(123, 167, 216));
-    background-color: rgb(103, 174, 255);
+    filter: drop-shadow(.2rem .3rem .4rem #c501e2);
+    background-color: #c501e2;
 }
 
 /* Crud-Pedidos-Stylesheet */
@@ -90,16 +123,16 @@ input::placeholder {
 }
 
 .center-column{
-    width: 75rem;
+    width: 60rem;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #333;
     border-radius: 1rem;
-    box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 2px 30px 0px rgba(32, 32, 32, 0.75);
 }
 
 .item-row{
-    background-color: #a376da;
+    background-color: #8400ff;
     width: 100%;
     margin-bottom: .5rem;
     padding: 20px;
@@ -107,11 +140,12 @@ input::placeholder {
     color: #fff;
     font-size: 16px;
     box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+    transition: .75s
 }
 
 .item-row:hover {
-    filter: drop-shadow(.2rem .3rem .4rem #b791e6);
-    background-color: #805aaf;
+    filter: drop-shadow(.2rem .3rem .25rem #8400ff);
+    background-color: #8400ff;
 }
 
 .btn-display {
@@ -129,11 +163,12 @@ input::placeholder {
     padding: 12px 20px;
     margin: 8px 0;
     color: #fff;
-    background-color: #5663ad;
-    border: 1px solid #5663ad;
+    background-color: #1eff05d0;
+    border: 1px solid #1eff05d0;
+    transition: .75s
 }
 
 #submit:hover {
-    filter: drop-shadow(.2rem .3rem .4rem #6f7dce);
-    background-color: #4353af;
+    filter: drop-shadow(.2rem .3rem .4rem #1eff05);
+    background-color: #1eff05d0;
 }

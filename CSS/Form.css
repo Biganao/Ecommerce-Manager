@@ -8,7 +8,7 @@
 }
 
 h2 {
-    color:#424040;
+    color:#fafafade;
     text-align: center;
     padding-bottom: 2rem;
 }
@@ -20,7 +20,7 @@ h2::after {
     height: .3rem;
     margin: .5rem auto 0;
     border-bottom: 4px solid;
-    border-image-source: linear-gradient(to bottom right ,#f78ae0, #6638f0 );
+    border-image-source: linear-gradient(90deg, rgba(174,61,255,1) 20%, rgba(30,255,5,1) 100%);
     border-image-slice: 4;
 }
 
@@ -29,22 +29,23 @@ h2::after {
     height: 29rem;
     padding: 5rem;
     border-radius: 2rem;
-    background-color: #E6E6FA;
-    filter: drop-shadow(.25rem .20rem .85rem #424040);
+    background-color: #333;
+    filter: drop-shadow(.25rem .20rem .85rem #333);
 }
 
 #input-style {
     width: 17rem;
-    background-color: #E6E6FA;
-    border: .18rem solid #5e5e5e;
+    background-color: #333;
+    border: .18rem solid #525252;
+    color: #fafafade;
 }
 
 #input-style:hover {
-    border: .2rem solid #6638f0;
-    color: #612ef8;
+    border: .2rem solid #8400ff;
+    color: #8400ff;
 }
 
-.col-12 {
+.btn-submit {
     padding: .9rem;
     padding-top: 2rem;
     text-align: center;
@@ -53,19 +54,20 @@ h2::after {
 #btn-style {
     width: 7rem;
     height: 2.5rem;
-    background-color: #6638f0;
+    background-color: #8400ff;
     color: #fafafa;
-    border: #6638f0;
+    border: #8400ff;
+    transition: .75s;
 }
 
 #btn-style:hover {
-    filter: drop-shadow(.1rem .25rem .2rem #6638f0);
-    background-color: #cec4ee;
-    color: #4000ff;
+    filter: drop-shadow(.1rem .25rem .2rem #1eff05dc);
+    color: #fafafa;
+    background-color: #1eff05dc;
     font-size: 1.1rem;
     width: 8.5rem;
-    border: .2rem solid #6638f0;
-    transition: .5s;
+    border: .2rem solid #1eff05d0;
+ 
 }
 
 /* create/edit-form-stylesheet */
