@@ -14,16 +14,20 @@
 <body id="body-background">
 
     <header>
-        <form action="#" method="post" class="input-search">
+        <form action="#" method="post" class="search-input">
             <input type="text" name="search" id="search" placeholder="Buscar..." required>
             <button type="submit"><i class="fas fa-search"></i></button><br>
         </form>
-            <button onclick="crea()" class="crea-btn"> Add order </button>
+
+        <button onclick="crea()" class="btn-create"> Add Order </button>
     </header>
 
+    <h3> Total de Pedidos: 00 </h3>
+
     <section>
-        <div class="tb-column">
-            <div class="item-rows"> 
+       
+        <div class="center-column">
+            <div class="item-row"> 
                 <div class="btn-display"> <span class="order-text"> order-text </span> 
                     <button class="edit-btn" onclick="edit()"> Editar </button>
                     <button class="del-btn" id="btn-space-between" onclick="del()"> Apagar </button>

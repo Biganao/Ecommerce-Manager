@@ -8,18 +8,28 @@ header {
 }
 
 input{
-    width: 20rem;
+    width: 18rem;
 }
 
 .search-input {
     position:absolute;
-    left: 21rem;
+    right: 11rem;
     border: 1.5px solid #fafafade;
     border-radius: 0.3rem;
     padding: .3rem;
 }
 
-.search-input input, 
+.input-search {
+    position:absolute;
+    left: 9rem;
+    border: 1.5px solid #fafafade;
+    border-radius: 0.3rem;
+    padding: .3rem;
+}
+
+.input-search input,
+.search-input input,
+.input-search button, 
 .search-input button {
     font-size: 1.2rem;
     border-radius: 0.2rem;
@@ -27,6 +37,7 @@ input{
     padding: .3rem;
 }
 
+.input-search button,
 .search-input button {
     cursor: pointer;
     background: none;
@@ -34,6 +45,7 @@ input{
     transition: .5s;
 }
 
+.input-search button:hover,
 .search-input button:hover {
     background-color: #ffffff;
     color: #805aaf;
@@ -66,23 +78,36 @@ input{
 
 .btn-create {
     position: absolute;
-    right: 21.5rem;
+    right: 3rem;
     font-weight: bolder;
     margin-left: 5rem;
-    width: 13rem;
+    width: 6.5rem;
     height: 2.8rem;
-    border: 2px solid #8400ff;
+    border: 2px solid #8400ffbe;
     border-radius: .75rem;
-    background-color: #8400ff;
+    background-color: #8400ffbe;
     color: #fafafade;
     transition: .75s;
 }
 
+.crea-btn:hover,
 .btn-create:hover {
-    filter: drop-shadow(.2rem .3rem .4rem #8400ff);
-    width: 15rem;
-    background-color: #8400ff;
-    border: 4px solid #8400ff;
+    filter: drop-shadow(.2rem .3rem .4rem #8400ffdc);
+    border: 4px solid #8400ffbe;
+}
+
+.crea-btn {
+    position: absolute;
+    left: 29rem;
+    font-weight: bolder;
+    margin-left: 5rem;
+    width: 6.5rem;
+    height: 2.8rem;
+    border: 2px solid #8400ffbe;
+    border-radius: .75rem;
+    background-color: #8400ffbe;
+    color: #fafafade;
+    transition: .75s;
 }
 
 .edit-btn,
@@ -97,23 +122,23 @@ input{
 }
 
 .del-btn {
-    background-color: #c501e2;
+    background-color: #50fd00cb;
     transition: .75s
 }
 
 .edit-btn {
-    background-color: #52fd00;
+    background-color: #ae3dffcc;
     transition: .75s
 }
 
 .edit-btn:hover {
-    filter: drop-shadow(.2rem .3rem .4rem #52fd00);
-    background-color: #52fd00;
+    filter: drop-shadow(.2rem .3rem .4rem #ae3dff);
+    background-color: #ae3dffea;
 }
 
 .del-btn:hover {
-    filter: drop-shadow(.2rem .3rem .4rem #c501e2);
-    background-color: #c501e2;
+    filter: drop-shadow(.2rem .3rem .4rem #50fd00ea);
+    background-color: #50fd00ea;
 }
 
 /* Crud-Pedidos-Stylesheet */
@@ -122,8 +147,18 @@ input::placeholder {
     color: #d3d3d3;
 }
 
+h3{
+    color: #fafafade;
+    position: absolute;
+    top: 2.5rem;
+    left: 7rem;
+}
+
 .center-column{
-    width: 60rem;
+    position: absolute;
+    left: 7rem;
+    top: 7rem;
+    width: 40rem;
     margin: 20px auto;
     padding: 20px;
     background-color: #333;
@@ -131,8 +166,21 @@ input::placeholder {
     box-shadow: 6px 2px 30px 0px rgba(32, 32, 32, 0.75);
 }
 
-.item-row{
-    background-color: #8400ff;
+.tb-column{
+    position: absolute;
+    left: 8.5rem;
+    top: 13rem;
+    width: 65rem;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 1rem;
+    box-shadow: 6px 2px 30px 0px rgba(32, 32, 32, 0.75);
+}
+
+.item-row,
+.item-rows{
+    background-color: #8400ffbe;
     width: 100%;
     margin-bottom: .5rem;
     padding: 20px;
@@ -141,11 +189,6 @@ input::placeholder {
     font-size: 16px;
     box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
     transition: .75s
-}
-
-.item-row:hover {
-    filter: drop-shadow(.2rem .3rem .25rem #8400ff);
-    background-color: #8400ff;
 }
 
 .btn-display {
@@ -158,17 +201,24 @@ input::placeholder {
     margin-left: 1rem;
 }
 
-#submit{
+.order-text {
+    position: absolute;
+    left: 2.3rem;
+    top: 2.8rem;
+    z-index:1;
+}
+
+/*#submit{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     color: #fff;
-    background-color: #1eff05d0;
+    background-color: #1eff05be;
     border: 1px solid #1eff05d0;
     transition: .75s
 }
 
 #submit:hover {
-    filter: drop-shadow(.2rem .3rem .4rem #1eff05);
+    filter: drop-shadow(.1rem .2rem .4rem #1eff05);
     background-color: #1eff05d0;
-}
+}*/

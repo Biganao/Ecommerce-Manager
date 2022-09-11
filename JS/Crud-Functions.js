@@ -53,7 +53,7 @@ function del() {
     })
     .then((Confirm) => {
       if (Confirm) {
-        window.location.href = "#"; // redirecionameto da pagina
+        window.location.href = "Create-pedidos.html"; // redirecionameto da pagina
       } else {
         swal("Pedido para criar um novo cadastro, cancelado");
       }
